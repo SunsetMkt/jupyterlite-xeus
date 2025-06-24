@@ -7,6 +7,7 @@ dependencies:
   - jupyter_server
   - jupyterlite-core >=0.6
   - jupyterlite-xeus >=4
+  - jupyterlab_server
   - jupyterlab-language-pack-ar-SA
   - jupyterlab-language-pack-ca-ES
   - jupyterlab-language-pack-cs-CZ
