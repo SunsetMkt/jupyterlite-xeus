@@ -41,3 +41,5 @@ dependencies:
   - jupyterlab-language-pack-vi-VN
   - jupyterlab-language-pack-zh-CN
   - jupyterlab-language-pack-zh-TW
+  # https://github.com/jupyterlite/terminal
+  - jupyterlite-terminal
