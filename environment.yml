@@ -13,3 +13,4 @@ dependencies:
   - xeus-nelson
   - xeus-javascript
   - xeus-cpp
+  - xeus-r
