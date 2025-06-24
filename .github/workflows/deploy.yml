@@ -7,13 +7,14 @@ on:
   pull_request:
     branches:
       - '*'
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -21,9 +22,9 @@ jobs:
           python-version: '3.12'
 
       - name: Install mamba
-        uses: mamba-org/setup-micromamba@v1
+        uses: mamba-org/setup-micromamba@v2
         with:
-          micromamba-version: '1.5.8-0'
+          micromamba-version: '2.0.5'
           environment-file: build-environment.yml
           cache-environment: true
 
