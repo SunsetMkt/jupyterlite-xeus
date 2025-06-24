@@ -19,5 +19,3 @@ dependencies:
   - xeus-cpp
   # https://github.com/jupyterlite/xeus/blob/main/docs/environment-r.yml
   - xeus-r
-  # https://github.com/jupyterlite/terminal
-  - jupyterlite-terminal
