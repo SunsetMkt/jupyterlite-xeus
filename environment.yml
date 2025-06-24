@@ -3,14 +3,19 @@ channels:
   - https://repo.prefix.dev/emscripten-forge-dev
   - https://repo.prefix.dev/conda-forge
 dependencies:
+  # https://github.com/jupyterlite/xeus/blob/main/docs/environment-python.yml
   - xeus-python
   - ipycanvas
   - numpy
   - matplotlib
   - pillow
   - ipywidgets
+  - ipyleaflet
+  # https://github.com/jupyterlite/xeus/blob/main/docs/environment-other.yml
   - xeus-lua
   - xeus-nelson
   - xeus-javascript
+  # https://github.com/jupyterlite/xeus/blob/main/docs/environment-cpp.yml
   - xeus-cpp
+  # https://github.com/jupyterlite/xeus/blob/main/docs/environment-r.yml
   - xeus-r

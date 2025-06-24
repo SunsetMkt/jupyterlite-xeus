@@ -7,6 +7,10 @@ dependencies:
   - jupyter_server
   - jupyterlite-core >=0.6
   - jupyterlite-xeus >=4
+  # https://jupyterlite.readthedocs.io/en/stable/howto/configure/translation.html
+  # Also make sure you have the jupyterlab_server dependency installed in your
+  # build environment. jupyterlab_server is used by the jupyter-lite CLI to 
+  # find and install language packs.
   - jupyterlab_server
   - jupyterlab-language-pack-ar-SA
   - jupyterlab-language-pack-ca-ES
