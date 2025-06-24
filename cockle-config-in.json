@@ -4,20 +4,6 @@
     "lua": {},
     "nano": {},
     "tree": {},
-    "util-js": {
-      "modules": {
-        "js-capitalise": {},
-        "js-read": {}
-      },
-      "local_directory": "../test/util-js/lib",
-      "wasm": false
-    },
-    "util-wasm": {
-      "modules": {
-        "local-cmd": {}
-      },
-      "local_directory": "../test/util-wasm/wasm"
-    },
     "vim": {}
   },
   "aliases": {
