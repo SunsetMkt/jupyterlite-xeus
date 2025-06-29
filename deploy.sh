@@ -16,17 +16,10 @@ wget -qO- https://micro.mamba.pm/api/micromamba/linux-64/2.0.5 | tar -xvj bin/mi
 export MAMBA_ROOT_PREFIX="$PWD/micromamba"
 export PATH="$PWD/bin:$PATH"
 
-# Initialize Micromamba shell
-./bin/micromamba shell init -s bash --no-modify-profile -p $MAMBA_ROOT_PREFIX
+# Create the environment
+micromamba create -n jupyterenv python=3.12 -f build-environment.yml -y
 
-# Source Micromamba environment directly
-eval "$(./bin/micromamba shell hook -s bash)"
-
-# Activate the Micromamba environment
-micromamba create -n jupyterenv python=3.12 -c conda-forge -f build-environment.yml -y
-micromamba activate jupyterenv
-
-# build the JupyterLite site
+# Build JupyterLite
 cp README.md content
-jupyter lite --version
-jupyter lite build --contents content --output-dir dist --debug
+micromamba run -n jupyterenv jupyter lite --version
+micromamba run -n jupyterenv jupyter lite build --contents content --output-dir dist --debug
