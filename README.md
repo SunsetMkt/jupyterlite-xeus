@@ -21,7 +21,7 @@ Creating a new deployment can be done in three easy steps:
 
 **Step 3: Customize your conda environment**
 
-1. Update your ``environment.yml`` file to include the required packages.
+1. Update your `environment.yml` file to include the required packages.
 2. This ensures that your environment has all the necessary dependencies.
 
 ## 🎬 Visual Guide
@@ -32,23 +32,23 @@ For a step-by-step visual guide, check out the screencast below:
 
 ## 📦 How to install kernels and packages
 
-You can install specific kernels and extra packages by adding them to the ``environment.yml`` file.
+You can install specific kernels and extra packages by adding them to the `environment.yml` file.
 
 See https://jupyterlite-xeus.readthedocs.io/en/latest/environment.html for more documentation.
 
 ### Example 1: JupyterLite with NumPy and Matplotlib
 
-To create a JupyterLite deployment with NumPy and Matplotlib pre-installed, edit the ``environment.yml`` file as follows:
+To create a JupyterLite deployment with NumPy and Matplotlib pre-installed, edit the `environment.yml` file as follows:
 
 ```yml
 name: xeus-kernel
 channels:
-  - https://repo.prefix.dev/emscripten-forge-dev
-  - https://repo.prefix.dev/conda-forge
+    - https://repo.prefix.dev/emscripten-forge-dev
+    - https://repo.prefix.dev/conda-forge
 dependencies:
-  - xeus-python
-  - numpy
-  - matplotlib
+    - xeus-python
+    - numpy
+    - matplotlib
 ```
 
 ### Example 2: JupyterLite with R and coursekata
@@ -58,11 +58,11 @@ To use the R kernel and the coursekata package, edit the environment.yml file as
 ```yml
 name: xeus-kernel
 channels:
-  - https://repo.prefix.dev/emscripten-forge-dev
-  - https://repo.prefix.dev/conda-forge
+    - https://repo.prefix.dev/emscripten-forge-dev
+    - https://repo.prefix.dev/conda-forge
 dependencies:
-  - xeus-r
-  - r-coursekata
+    - xeus-r
+    - r-coursekata
 ```
 
 ### Example 3: JupyterLite with C++
@@ -72,8 +72,8 @@ To use the C++ kernel, edit the environment.yml file as follows:
 ```yml
 name: xeus-kernel
 channels:
-  - https://repo.prefix.dev/emscripten-forge-dev
-  - https://repo.prefix.dev/conda-forge
+    - https://repo.prefix.dev/emscripten-forge-dev
+    - https://repo.prefix.dev/conda-forge
 dependencies:
-  - xeus-cpp
+    - xeus-cpp
 ```
