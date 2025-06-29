@@ -19,6 +19,6 @@ export PATH="$PWD/bin:$PATH"
 micromamba create -n jupyterenv python=3.12 -f build-environment.yml -y
 
 # Build JupyterLite
-cp README.md content
+cp README.md content/PREBUILT_README.md
 micromamba run -n jupyterenv jupyter lite --version
 micromamba run -n jupyterenv jupyter lite build --contents content --output-dir dist --debug
