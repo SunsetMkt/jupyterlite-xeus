@@ -2,9 +2,11 @@
   "XeusAddon": {
     "environment_file": [
       "environment-python.yml",
-      "environment-other.yml",
+      "environment-js.yml",
       "environment-r.yml",
-      "environment-cpp.yml"
+      "environment-cpp.yml",
+      "environment-lua.yml",
+      "environment-nelson.yml"
     ]
   }
 }
