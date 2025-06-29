@@ -4,6 +4,27 @@
 
 This GitHub template allows you to create deployments of JupyterLite with a custom set of conda packages.
 
+## Warning for multiple language kernels in one deployment
+
+Each kernel and its dependencies should be separated to different environments and load them with `jupyter_lite_config.json`:
+
+```json
+{
+    "XeusAddon": {
+        "environment_file": [
+            "environment-python.yml",
+            "environment-js.yml",
+            "environment-r.yml",
+            "environment-cpp.yml",
+            "environment-lua.yml",
+            "environment-nelson.yml"
+        ]
+    }
+}
+```
+
+Otherwise there will be a conflict while loading any of the kernels.
+
 ## 💡 How to make your own deployment
 
 Creating a new deployment can be done in three easy steps:
