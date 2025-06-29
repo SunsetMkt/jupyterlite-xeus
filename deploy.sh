@@ -1,5 +1,4 @@
 #!/bin/bash
-# https://github.com/jupyterlite/terminal/blob/main/deploy/deploy.sh
 # https://jupyterlite.readthedocs.io/en/stable/howto/deployment/vercel-netlify.html#vercel
 set -e
 
@@ -10,7 +9,7 @@ if command -v yum &> /dev/null; then
 fi
 
 # Download and extract Micromamba
-wget -qO- https://micro.mamba.pm/api/micromamba/linux-64/2.0.5 | tar -xvj bin/micromamba
+wget -qO- https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
 
 # Set up environment variables
 export MAMBA_ROOT_PREFIX="$PWD/micromamba"
